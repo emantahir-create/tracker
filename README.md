@@ -6,6 +6,7 @@
 - Enter expense amount
 - Calculate total expenses
 - Delete expenses
+  
 Technologies Used:
 - TypeScript
 - HTML
