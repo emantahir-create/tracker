@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <h1>Expense Tracker</h1>
+      </div>
+      <section class="total-card">
+        <p class="total-label">Total expense</p>
+        <span id="total-amount" class="total-amount">Rs 0.00</span>
+        <p id="entry-count" class="entry-count">0 entries</p>
+      </section>
+      <form id="expense-form" class="expense-form">
+        <input
+          id="expense-name"
+          type="text"
+          placeholder="Expense name (e.g. Groceries)"
+          autocomplete="off"
+        />
+        <input
+          id="expense-amount"
+          type="number"
+          step="0.01"
+          placeholder="Amount"
+        />
+        <p id="error-msg" class="error-msg"></p>
+        <button type="submit">Add expense</button>
+      </form>
+      <ul id="expense-list" class="expense-list"></ul>
+    </main>
+    <script type="module" src="/src/expenseTracker.ts"></script>
+  </body>
+</html>
