@@ -1,5 +1,6 @@
  Expense Tracker:
  A simple Expense Tracker application built with TypeScript.
+ 
  Features:
 - Add expenses
 - Enter expense amount
